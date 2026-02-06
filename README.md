@@ -18,27 +18,27 @@ Visualization: Power BI (Star Schema modeling, DAX, Interactive UI/UX)
 
 1. Data Architecture (SQL)
    
-Designed a relational schema with Fact (Sales) and Dimension (Factories, Products, Targets, Geography) tables.
+ Designed a relational schema with Fact (Sales) and Dimension (Factories, Products, Targets, Geography) tables.
 
-Developed a Sales_Analysis_View to streamline the joining of geographic ZIP data with transactional records.
+ Developed a Sales_Analysis_View to streamline the joining of geographic ZIP data with transactional records.
 
 2. Engineering & Feature Extraction (Python)
    
-Automated data cleaning and validation using Pandas.
+ Automated data cleaning and validation using Pandas.
 
-Feature Engineering: Calculated critical logistics metrics including:
+ Feature Engineering: Calculated critical logistics metrics including:
 
-Days_to_Ship: Measuring factory-to-customer lead times.
+ Days_to_Ship: Measuring factory-to-customer lead times.
 
-Profit_Margin_pct: Analyzing profitability per unit.
+ Profit_Margin_pct: Analyzing profitability per unit.
 
-Seasonality Tags: Extracting Year and Month trends for 4-year growth analysis.
+ Seasonality Tags: Extracting Year and Month trends for 4-year growth analysis.
 
 3. Business Intelligence (Power BI)
    
-Executive Overview: A high-level dashboard tracking Revenue vs. 2024 Targets and Regional Market Share.
+ Executive Overview: A high-level dashboard tracking Revenue vs. 2024 Targets and Regional Market Share.
 
-Operations Deep-Dive: A logistics-focused sheet identifying factory bottlenecks and shipping inefficiencies using correlation scatter plots.
+ Operations Deep-Dive: A logistics-focused sheet identifying factory bottlenecks and shipping inefficiencies using correlation scatter plots.
 
 Interactive UX: Implemented synchronized slicers, drill-throughs, and rounded-card UI for a modern application feel.
 
