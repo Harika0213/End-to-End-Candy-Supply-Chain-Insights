@@ -1,86 +1,65 @@
-🍭 Candy Distribution & Supply Chain Analytics
+🍬 Candy Distribution Analytics Dashboard
 
-An End-to-End Data Engineering & Business Intelligence Project
+🧠 Business Problem
+A candy distribution business needs to understand its sales performance, profitability, and product demand to make better decisions on inventory, pricing, and regional strategy.
 
-📌 Project Overview
+This project answers:
 
-This project provides a comprehensive analysis of a candy distribution network from 2021 to 2024. By integrating SQL for database management, Python for advanced data engineering, and Power BI for executive storytelling, I transformed raw transactional data into actionable supply chain insights.
+Which products generate the most revenue and profit?
+How efficient is the business in terms of profit margins?
+What trends can help improve sales and distribution strategy?
 
-🛠️ The Tech Stack
+📊 Dataset
 
-Database: PostgreSQL/MySQL (Data storage and View creation)
+Source: Sales & Distribution Data
+Size: 10,000+ transaction records
+Data includes: Product, Sales, Revenue, Profit, Region
 
-Data Engineering: Python (Pandas, SQLAlchemy, Jupyter Notebooks)
+🔍 Data Processing & Analysis
 
-Visualization: Power BI (Star Schema modeling, DAX, Interactive UI/UX)
+Data was cleaned, transformed, and analyzed using Python and SQL:
+Removed inconsistencies and handled missing values
+Standardized product and category data
+Calculated key metrics:
+Total Revenue
+Total Profit
+Profit Margin
+Prepared structured datasets for dashboard reporting
 
-🚀 Key Features & Workflow
+📈 Key Insights
 
-1. Data Architecture (SQL)
-   
- Designed a relational schema with Fact (Sales) and Dimension (Factories, Products, Targets, Geography) tables.
+💰 Generated ₹141K+ total revenue across all products
 
- Developed a Sales_Analysis_View to streamline the joining of geographic ZIP data with transactional records.
+📊 Achieved ₹93K+ total profit, indicating strong profitability
 
-2. Engineering & Feature Extraction (Python)
-   
- Automated data cleaning and validation using Pandas.
+📈 Maintained a ~66% profit margin, showing efficient cost management
 
- Feature Engineering: Calculated critical logistics metrics including:
+🍫 A few top-performing products contributed the majority of revenue (high concentration)
 
- Days_to_Ship: Measuring factory-to-customer lead times.
+💡 Business Impact / Decisions
 
- Profit_Margin_pct: Analyzing profitability per unit.
+Focus on top-performing products to maximize revenue growth
+Optimize pricing strategies to maintain high profit margins
+Identify underperforming products and improve or remove them
+Improve inventory planning based on demand trends
 
- Seasonality Tags: Extracting Year and Month trends for 4-year growth analysis.
+📊 Dashboard Features
 
-3. Business Intelligence (Power BI)
-   
- Executive Overview: A high-level dashboard tracking Revenue vs. 2024 Targets and Regional Market Share.
+KPI Cards: Revenue, Profit, Profit Margin
+Product-wise performance analysis
+Sales trends visualization
+Interactive filters for deeper insights
 
- Operations Deep-Dive: A logistics-focused sheet identifying factory bottlenecks and shipping inefficiencies using correlation scatter plots.
+🛠 Tools & Technologies
 
-Interactive UX: Implemented synchronized slicers, drill-throughs, and rounded-card UI for a modern application feel.
+Python: Data cleaning and preprocessing (Pandas, NumPy)
+SQL: Data querying and transformation
+Power BI: Dashboard creation and visualization
 
-📊 Business Questions Answered
+📌 Why This Project Matters
 
-Sales Growth: How has revenue trended across the Chocolate vs. Sugar divisions over the last 48 months?
-
-Logistics Efficiency: Which factories are consistently exceeding the 5-day shipping threshold?
-
-Market Penetration: Which US ZIP codes are driving the highest volume, and where is the "Profit Leakage" occurring?
-
-📁 Repository Structure
-
-candy_distributor.sql: Database schema and view definitions.
-
-candy_distributor.ipynb: Python notebook for data cleaning and feature engineering.
-
-Candy_Sales_Analytical_Master.csv: The final "Clean" dataset used for BI.
-
-Candy_Distributor_Dashboard.pbix: The complete Power BI report file.
-
-💡 Key Insights
-
-Shipping Bottlenecks: Identified that while the "Sugar" division has higher volume, the "Chocolate" division currently has a 12% faster delivery rate.
-
-Profitability: 15% of high-volume products were found to have margins below 5%, leading to a recommended pricing strategy adjustment.
-
-How to Use This
-
-Run the .sql script to set up your local database.
-
-Execute the Jupyter Notebook to process the raw data.
-
-Open the .pbix file in Power BI Desktop to explore the interactive visualizations.
-
-## 📊 Dashboard Preview
-
-### Executive Sales Overview
-![Sales Dashboard](images/sales_tab.png)
-
-### Operational Deep-Dive
-![Operations Dashboard](images/ops_tab.png)
-
-
-
+This project demonstrates the ability to:
+Analyze large transactional datasets (10K+)
+Perform data cleaning and transformation using Python & SQL
+Generate business insights from sales data
+Build dashboards that support revenue and profit optimization decisions
