@@ -6,7 +6,9 @@ A candy distribution business needs to understand its sales performance, profita
 This project answers:
 
 Which products generate the most revenue and profit?
+
 How efficient is the business in terms of profit margins?
+
 What trends can help improve sales and distribution strategy?
 
 📊 Dataset
